@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "02ebd4055bd3a852",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "NLP 감정 분류.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "NLP 감정 분류.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
+                "file": "NLP 감정 분류.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md"
+                "file": "NLP 감정 분류.md"
               }
             }
           }
@@ -147,8 +160,9 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "a04a92fff0941bb3",
+  "active": "02ebd4055bd3a852",
   "lastOpenFiles": [
-    "README.md"
+    "README.md",
+    "NLP 감정 분류.md"
   ]
 }
