@@ -78,8 +78,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -164,7 +163,9 @@
   "active": "02ebd4055bd3a852",
   "lastOpenFiles": [
     "Pasted image 20231207211133.png",
-    "README.md",
-    "NLP 감정 분류.md"
+    "무제 파일 1.canvas",
+    "무제 파일.canvas",
+    "NLP 감정 분류.md",
+    "README.md"
   ]
 }
