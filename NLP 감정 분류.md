@@ -75,8 +75,34 @@ scikit-learn라이브러리는 내부적으로 나이브 베이즈 모델을 제
 >( 코렙의 경우 )
 >!pip install scikit-learn
 
-전체 코드는 우선 아래와 같다
+코드는 아래와 같다
 
 ```python
+from sklearn.feature_extraction.text import CountVectorizer
 
+from sklearn.naive_bayes import MultinomialNB
+
+doc = ['i am happy', 'what a wonderful say'] #데이터
+emo = ['happy', 'excited'] # 정답
+
+cv= CountVectorizer()
+
+# 텍스트 형태의 데이터에서 각 단어에 ID를 부여하고 빈도수를 계산함
+doc_to_vec = cv.fit_transform(doc) 
+
+print(doc_to_vec)
+
+clf = MultinomialNB()
+
+clf.fit(doc_to_vec, emo) # 모델 학습
+
+test = ["i am good"] # 테스트 데이터
+
+test_to_vec = cv.transform(test) # 데이터 백터화
+
+result = clf.predict(test_to_vec) # 결과 예측
+
+print(result)
 ```
+
+여기서
