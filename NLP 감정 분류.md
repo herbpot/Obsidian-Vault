@@ -68,3 +68,15 @@
 
 scikit-learn라이브러리는 내부적으로 나이브 베이즈 모델을 제공한다
 
+일단 아래 명령어를 콘솔에 입력해 scikit-learn을 설치하자
+>( 로컬의 경우 )
+>pip install scikit-learn
+
+>( 코렙의 경우 )
+>!pip install scikit-learn
+
+전체 코드는 우선 아래와 같다
+
+```python
+
+```
