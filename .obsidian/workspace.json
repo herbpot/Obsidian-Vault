@@ -61,7 +61,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#감정분류",
+                "query": "tag:#나이브_베이즈_기반_감정_분류",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -78,7 +78,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -160,7 +161,7 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "02ebd4055bd3a852",
+  "active": "095485bd8ba2f66d",
   "lastOpenFiles": [
     "Pasted image 20231207211133.png",
     "무제 파일 1.canvas",

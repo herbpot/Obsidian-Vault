@@ -64,8 +64,8 @@
 >
 >따라서 정리하면 *특정 감정을 나타내는 텍스트 중 대상이 나타날 확률 x 대상 감정이 나타날 확률 /  그 텍스트가 나타날 확률*  이다
 
-good라는 단어로 예시를 들어보자면 아래와 같이 나타낼 수 있다
->어떤 감정을 나타내는 단어가 good일 확률 x 어떤 감정이 나타날 확률 / good가 나타날 확률
+good라는 단어와 happy라는 단어로 예시를 들어보자면 아래와 같이 나타낼 수 있다
+>(happy를 나타내는 단어가 good일 확률) x (전체 데이터셋에서 happy 나타날 확률) / (good가 나타날 확률)
 
 이제 한번 실제로 해보자
 
@@ -84,21 +84,22 @@ scikit-learn라이브러리는 내부적으로 나이브 베이즈 모델을 제
 코드는 아래와 같다
 
 ```python
+# scikit-learn에서 필요한 모듈 import
 from sklearn.feature_extraction.text import CountVectorizer
-
 from sklearn.naive_bayes import MultinomialNB
 
+# 데이터를 담을 변수 선언
 doc = ['i am happy', 'what a wonderful say'] #데이터
 emo = ['happy', 'excited'] # 정답
 
+# 모듈 언선
 cv= CountVectorizer()
+clf = MultinomialNB()
 
 # 텍스트 형태의 데이터에서 각 단어에 ID를 부여하고 빈도수를 계산함
 doc_to_vec = cv.fit_transform(doc) 
 
 print(doc_to_vec)
-
-clf = MultinomialNB()
 
 clf.fit(doc_to_vec, emo) # 모델 학습
 
