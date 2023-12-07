@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "NLP 감정 분류.md",
+                "file": "NLP 나이브 베이즈 감정 분류.md",
                 "mode": "source",
                 "source": false
               }
@@ -78,8 +78,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -99,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "NLP 감정 분류.md",
+                "file": "NLP 나이브 베이즈 감정 분류.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "NLP 감정 분류.md",
+                "file": "NLP 나이브 베이즈 감정 분류.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -139,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "NLP 감정 분류.md"
+                "file": "NLP 나이브 베이즈 감정 분류.md"
               }
             }
           }
@@ -161,12 +160,12 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "095485bd8ba2f66d",
+  "active": "02ebd4055bd3a852",
   "lastOpenFiles": [
     "Pasted image 20231207211133.png",
     "무제 파일 1.canvas",
     "무제 파일.canvas",
-    "NLP 감정 분류.md",
+    "NLP 나이브 베이즈 감정 분류.md",
     "README.md"
   ]
 }
