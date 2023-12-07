@@ -105,4 +105,4 @@ result = clf.predict(test_to_vec) # 결과 예측
 print(result)
 ```
 
-여기서
+여기서 
