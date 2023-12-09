@@ -20,8 +20,8 @@ CNN이란 **Convolutional Neural Network**(합성곱 신경망)의 약자로 시
 
 CNN을 이해하기 위해선 아래의 용어들을 먼저 알아야 한다
 >Convolution
->Pool                     
 >Stride
+>Pool
 
 하나씩 알아보자
 
@@ -38,9 +38,18 @@ CNN에서 2차원 데이터는 행렬로 나타낸다. 그러므로 이를 행�
 >D = $\begin{pmatrix}5&2&6&9\\2&4&7&1\\1&5&2&8\\2&4&3&8 \end{pmatrix}$, F = $\begin{pmatrix}1&0\\0&1\\ \end{pmatrix}$ 에서 왼쪽 위부터 한 칸씩 stride(이동)하면서 Convolution 연산을 실행해주면 
 > $D'$ = $\begin{pmatrix}9&9&7\\7&6&14\\5&8&10 \end{pmatrix}$ 이 된다
 
-다만 이러한 과정을 보면 알 수 있듯이 데이터의 크기가 작아지면서 손실이 일어나는 것을 알 수 있는데, 이를 방지하기 위해 Zero padding을 사용하기도 한다.
+다만 이러한 과정을 보면 알 수 있듯이 4x4 데이터가 3x3 데이터가 된 것처럼 Output 데이터의 크기가 작아지면서 손실이 일어나는 것을 알 수 있는데, 이를 방지하기 위해 Zero padding을 사용하기도 한다. 이에 대해서는 __마지막에__ 알아보자
+
+## Stride
+필터가 얼마나 움직일지를 말한다.
+필터가 한번 움직일 때 Stride의 크기만큼 움직이기 때문에 Output 데이터의 크기에 영향을 주는 요인이기도 한다  
+
+## Pool
+
 
 #### Zero padding
 간단하게 생각해서 데이터 주위를 0으로 둘러싸는 것이라고 생각할 수 있다.
-물론 이것도 몇 번 감싸는지는 filter와 stride에 따라 달라지기 때문에 상황마다 다르게 
-## Pool
+물론 이것도 몇 번 감싸는지는 filter와 stride에 따라 달라지기 때문에 상황마다 몇 번 감싸야 할지 생각해야 할 수 있다.
+
+>D = $\begin{pmatrix}5&2&9\\2&4&1\\1&5&2 \end{pmatrix}$ 에 Zero padding을 가하면
+> $D'$ = $\begin{pmatrix}0&0&0&0&0\\0&5&2&9&0\\0&2&4&1&0\\0&1&5&2&0\\0&0&0&0&0 \end{pmatrix}$ 과 같이 된다. 이후 Convolution연산을 진행해도 기존 3x3 행렬에서 변하지 않았음을 알 수 있다
