@@ -21,7 +21,7 @@ CNN이란 **Convolutional Neural Network**(합성곱 신경망)의 약자로 시
 CNN을 이해하기 위해선 아래의 용어들을 먼저 알아야 한다
 >Convolution
 >Stride
->Pool
+>Pooling
 
 하나씩 알아보자
 
@@ -44,7 +44,15 @@ CNN에서 2차원 데이터는 행렬로 나타낸다. 그러므로 이를 행�
 필터가 얼마나 움직일지를 말한다.
 필터가 한번 움직일 때 Stride의 크기만큼 움직이기 때문에 Output 데이터의 크기에 영향을 주는 요인이기도 한다  
 
-## Pool
+## Pooling
+Pooling의 방법에는 대표적으로 Max-Pooling과 Average-Pooling 두 가지 방법이 있다.
+>Max-Pooling:
+>일정 구역의 최댓값을 해당 구역의 대푯값으로 설정하는 방법
+>
+>Average-Pooling:
+>일정 구역에서의 평균값을 해당 구역의 대푯값으로 설정하는 방법
+
+이러한 Pooling 기법은 대부분 Overfitting을 방지하기 위해서 쓰인다. 하지만 그만큼 데이터를 파괴하기 때문에 **무분별하게** 사용하지는 말자
 
 
 #### Zero padding
