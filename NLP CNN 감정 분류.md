@@ -60,3 +60,5 @@ Pooling의 방법에는 대표적으로 Max-Pooling과 Average-Pooling 두 가�
 
 >D = $\begin{pmatrix}5&2&9\\2&4&1\\1&5&2 \end{pmatrix}$ 에 Zero padding을 가하면
 > $D'$ = $\begin{pmatrix}0&0&0&0&0\\0&5&2&9&0\\0&2&4&1&0\\0&1&5&2&0\\0&0&0&0&0 \end{pmatrix}$ 과 같이 된다. 이후 Convolution연산을 진행해도 기존 3x3 행렬에서 변하지 않았음을 알 수 있다
+
+# #CNN기반_감정_분류 
