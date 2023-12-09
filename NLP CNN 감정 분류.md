@@ -21,7 +21,7 @@ CNN이란 **Convolutional Neural Network**(합성곱 신경망)의 약자로 일
 CNN을 이해하기 위해선 아래의 용어들을 먼저 알아야 한다
 >Convolution
 >: 한국어로 합성곱으로, 전체 데이터를 filter를 통해 필요한 부분만 압축시킨 것이다. 
->Pool
+>Pool                     
 >
 >Stride
 >
