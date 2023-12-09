@@ -74,5 +74,7 @@ Pooling의 방법에는 대표적으로 Max-Pooling과 Average-Pooling 두 가�
 ---
 # 4. #pytorch_라이브러리를_이용한_시스템_구축 
 우선 라이브러리를 설치하자
->pip install torch
->pip install torchtext==0.6.0
+```
+pip install torch
+	pip install torchtext==0.6.0
+```
