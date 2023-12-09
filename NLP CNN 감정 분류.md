@@ -30,5 +30,17 @@ CNN을 이해하기 위해선 아래의 용어들을 먼저 알아야 한다
 
 CNN에서 2차원 데이터는 행렬로 나타낸다. 그러므로 이를 행렬을 통해 나타내보면 아래와 같다.
 
-> D = $\begin{pmatrix}5&2&6&9\\2&4&7&1\\1&5&2&8\\2&4&3&8 \end{pmatrix}$ F = $\begin{pmatrix}1&0\\0&1\\ \end{pmatrix}$ 에서 왼쪽 위부터 한 칸씩 stride(이동)하면서 Convolution 연산을 실행해주면 
-> $D'$ = $\begin{pmatrix}1&2\\3&4\\ \end{pmatrix}$
+
+>D = $\begin{pmatrix}a&b&c\\d&e&f\\g&h&i \end{pmatrix}$ 를 데이터, F = $\begin{pmatrix}x&y\\z&w\\ \end{pmatrix}$ 를 필터라고 하고, 한 칸씩 stride(이동)하며 Convolution 연산을 한다고 하면
+> $D'$ = $\begin{pmatrix}ax+by+dz+ew&bx+cy+ez+fw\\dx+ey+gz+wi&ex+fy+hz+wi\end{pmatrix}$ 가 된다
+> 
+> 예를 들어
+>D = $\begin{pmatrix}5&2&6&9\\2&4&7&1\\1&5&2&8\\2&4&3&8 \end{pmatrix}$, F = $\begin{pmatrix}1&0\\0&1\\ \end{pmatrix}$ 에서 왼쪽 위부터 한 칸씩 stride(이동)하면서 Convolution 연산을 실행해주면 
+> $D'$ = $\begin{pmatrix}9&9&7\\7&6&14\\5&8&10 \end{pmatrix}$ 이 된다
+
+다만 이러한 과정을 보면 알 수 있듯이 데이터의 크기가 작아지면서 손실이 일어나는 것을 알 수 있는데, 이를 방지하기 위해 Zero padding을 사용하기도 한다.
+
+#### Zero padding
+간단하게 생각해서 데이터 주위를 0으로 둘러싸는 것이라고 생각할 수 있다.
+물론 이것도 몇 번 감싸는지는 filter와 stride에 따라 달라지기 때문에 상황마다 다르게 
+## Pool
