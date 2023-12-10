@@ -2,7 +2,7 @@
 > 1. #감정_분류
 > 2. #CNN이란
 > 3. #CNN기반_감정_분류
-> 4. #pytorch_라이브러리를_이용한_시스템_구축
+> 4. #tensorflow_라이브러리를_이용한_시스템_구축
 > 5. #추가
 
 ---
@@ -69,12 +69,11 @@ Pooling의 방법에는 대표적으로 Max-Pooling과 Average-Pooling 두 가�
 하지만 [이 논문](https://arxiv.org/abs/1408.5882)을 보면 알 수 있듯이, 근접한 언어는 같은 감정을 포함하는 경향이 있기 때문에 하나의 데이터에서 주변 데이터의 연관성을 살펴보는 CNN이 강점을 지닐 수도 있으며, 실제로도 더 강력했다는 논문이 있다.
 
 이제 실전으로 넘어가자
-이번에는 몇개의 데이터로 실험하는 것이 아니라 torchtext에서 제공하는 [영화 리뷰 데이터셋](http://ai.stanford.edu/~amaas/data/sentiment/)을 이용할 것이다
+이번에는 몇개의 데이터로 실험하는 것이 아니라 IMDB 데이터셋의 [영화 리뷰 데이터셋](http://ai.stanford.edu/~amaas/data/sentiment/)을 이용할 것이다
 
 ---
-# 4. #pytorch_라이브러리를_이용한_시스템_구축 
+# 4. #tensorflow_라이브러리를_이용한_시스템_구축 
 우선 라이브러리를 설치하자
 ```
-pip install torch
-pip install torchtext==0.6.0
+pip install tensorflow
 ```

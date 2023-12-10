@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#나이브_베이즈_기반_감정_분류",
+                "query": "tag:#pytorch_라이브러리를_이용한_시스템_구축",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -65,7 +65,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -147,7 +148,7 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "a04a92fff0941bb3",
+  "active": "095485bd8ba2f66d",
   "lastOpenFiles": [
     "README.md",
     "이.md",
