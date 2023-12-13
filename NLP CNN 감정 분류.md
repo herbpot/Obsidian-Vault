@@ -212,9 +212,9 @@ model.add(Conv2D(6, (5, 3), input_shape=(888, 999, 1), activation='relu'))
 model.add(MaxPooling2D(pool_size=(2, 2)))
 model.add(Flatten())
 model.add(Dense(120, activation='relu'))
-model.add(Dense(1, activation='softmax'))
+model.add(Dense(1, activation='sigmoid'))
   
-model.compile(optimizer='adam', loss=losses.BinaryCrossentropy(), metrics=['accuracy'])
+model.compile(optimizer='rmsprop', loss=losses.BinaryCrossentropy(), metrics=['accuracy'])
 ```
 
 이제 모델을 구성해보자
@@ -232,3 +232,5 @@ model.evaluate(test, tlabel)
 ```
 
 모델을 평가해본다
+
+이때 epoch
