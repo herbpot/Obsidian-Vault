@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "NLP CNN 감정 분류.md",
+                "file": "NLP 나이브 베이즈 감정 분류.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "NLP CNN 감정 분류.md",
+                "file": "NLP 나이브 베이즈 감정 분류.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "NLP CNN 감정 분류.md",
+                "file": "NLP 나이브 베이즈 감정 분류.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "NLP CNN 감정 분류.md"
+                "file": "NLP 나이브 베이즈 감정 분류.md"
               }
             }
           }
@@ -149,10 +149,10 @@
   },
   "active": "a04a92fff0941bb3",
   "lastOpenFiles": [
+    "이.md",
     "NLP 나이브 베이즈 감정 분류.md",
     "NLP CNN 감정 분류.md",
     "README.md",
-    "이.md",
     "Pasted image 20231207211133.png",
     "무제 파일 1.canvas",
     "무제 파일.canvas"
