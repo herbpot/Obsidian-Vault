@@ -171,6 +171,34 @@ def one(index):
 index_onehot = {i:one(i) for i in index_word.keys()}
 ```
 
-그 다음 1차원 데이터인 문장을 2차원 형태로 만들기 위해 one hot encoding을 진행한다
+그 다음 1차원 데이터인 문장을 2차원 형태로 만들기 위해  one hot encoding을 진행하기 위해 dictionaty를 만든다.
+각 인덱스를 0과 1로 구분함으로써 인덱스의 크기의 차이가 학습에 영향을 끼치지 않도록 할 것이다. 이에 대해선 나중에 다시 정리해보도록 하겠다
 
-다만 이때 인코딩 후를 보면 문장의 데이터가 3차원인 것을 볼 수 있는데, 이는 conv2D레이어가 이미지 데이터를 처리할 때 
+다만 이때 인코딩 후를 보면 문장의 데이터가 3차원인 것을 볼 수 있는데, 이는 conv2D레이어가 이미지 데이터를 처리할 때 각 픽셀에서 RGB데이터까지 포함하여 3차원으로 처리하기 때문에 인위적으로 한 차원을 늘려준 것이다
+
+```python
+def encode_one(index):
+    return np.array([index_onehot[i] for i in index])
+```
+
+이후 아까 만든 dictionary를 이용한 encoder를 만든다
+
+```python
+train = [] # 학습 데이터의 x에 해당한다
+for i in train_datas:
+    train.append(encode_one(i))
+    
+train = np.array(train)
+
+test = [] # 검증 데이터의 x에 해당한다
+for i in test_datas:
+    test.append(encode_one(i))
+
+test = np.array(test)
+
+label = np.array([[i] for i in train_labels]) # 학습 데이터의 y에 해당한다
+tlabel = np.array([[i] for i in test_labels]) # 검증 데이터의 y에 해당한다
+```
+
+그리고 train set과 test set에 전부 one hot encode 처리를 해주자
+
