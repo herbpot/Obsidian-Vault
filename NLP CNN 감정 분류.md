@@ -87,4 +87,51 @@ pip install numpy==1.23.5
 
 마지막으로 똑같이 받아도 오류가 난다면 anaconda를 사용해보자
 
+```python
+import numpy as np
+from tensorflow.keras import datasets, preprocessing, losses
+```
+일단 필요한 라이브러리를 가져오자
+datasets를 이용해 imdb데이터를 가져오고, numpy, preprocessing을 이용해 데이터 전처리를 진행할 것이다
 
+```python
+imdb = datasets.imdb
+num_words = 1000
+
+(train_datas, train_labels),(test_datas, test_labels) = imdb.load_data(num_words=num_words)
+word_index = imdb.get_word_index()
+```
+
+다음으로 데이터를 가져온 후 train과 test용으로 나눠준다.
+또 로컬로 학습을 진행할때 메모리가 부족하므로 **num_words = 1000**를 통해 데이터에 사용된 단어의 개수를 제한한다. (코랩을 사용하거나 메모리가 넉넉한 경우는 데이터 크기를 늘려줘도 좋다)
+
+이때 word_index에는 원본 데이터셋에서 사용된 모든 단어가 들어있으므로 사용되지 않은 단어는 이후 지워줄 것이다
+
+```python
+datalen = 100
+train_datas = train_datas[:datalen]
+train_labels = train_labels[:datalen]
+test_datas = test_datas[:datalen]
+test_labels = test_labels[:datalen]
+```
+아까와 같은 이유로 사용할 데이터의 크기도 줄여줄 것이다
+
+```python
+used = set()
+for a in train_datas:
+    for b in a:
+        used.add(b)
+for a in test_datas:
+    for b in a:
+        used.add(b)
+def is_used(pair):
+    key, num = pair
+    if num in used:
+        return True
+    else:
+        return False
+
+word_index = dict(filter(is_used, word_index.items()))
+```
+
+train_datas와 test_datas에서 사용된 단어
