@@ -134,4 +134,15 @@ def is_used(pair):
 word_index = dict(filter(is_used, word_index.items()))
 ```
 
-train_datas와 test_datas에서 사용된 단어
+train_datas와 test_datas에서 사용된 단어를 제외한 나머지 단어들은 word_index에서 제외해준다.
+
+```python
+word_index["<PAD>"] = 0
+word_index["<START>"] = 1
+word_index["<UNK>"] = 2
+word_index["<UNUSED>"] = 3
+```
+
+이후 전처리에서 사용할 <PAD>와<START> 토큰을 추가해주고 알 수 없는 단어(word_index에 존재하지 않는 단어)에 사용될 <UNK>토큰도 추가해준다.
+
+원래는 word_index에 없는 단어는 일일이 필터링 해줘야 하지만 이 데이터셋에선 미리 필터링 된 상태로 제공되었다
