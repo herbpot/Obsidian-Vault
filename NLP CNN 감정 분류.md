@@ -161,4 +161,4 @@ test_datas = preprocessing.sequence.pad_sequences(test_datas, value=word_index['
 
 그 정보를 바탕으로 padding을 해준다.
 
-이후 1차원 데이터인 문장을 2차원 형태로 만들기  위해
+그 다음 1차원 데이터인 문장을 2차원 형태로 만들기 위해 one hot encoding을 진행할 것이다
