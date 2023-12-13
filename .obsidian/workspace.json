@@ -65,8 +65,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -148,12 +147,12 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "095485bd8ba2f66d",
+  "active": "a04a92fff0941bb3",
   "lastOpenFiles": [
+    "NLP 나이브 베이즈 감정 분류.md",
+    "NLP CNN 감정 분류.md",
     "README.md",
     "이.md",
-    "NLP CNN 감정 분류.md",
-    "NLP 나이브 베이즈 감정 분류.md",
     "Pasted image 20231207211133.png",
     "무제 파일 1.canvas",
     "무제 파일.canvas"
