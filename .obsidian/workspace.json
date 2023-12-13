@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#pytorch_라이브러리를_이용한_시스템_구축",
+                "query": "tag:#tensorflow_라이브러리를_이용한_시스템_구축",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,

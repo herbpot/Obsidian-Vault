@@ -2,7 +2,7 @@
 > 1. #감정_분류
 > 2. #CNN이란
 > 3. #CNN기반_감정_분류
-> 4. #tensorflow_라이브러리를_이용한_시스템_구축
+> 4. #keras_라이브러리를_이용한_시스템_구축
 > 5. #추가
 
 ---
@@ -72,8 +72,17 @@ Pooling의 방법에는 대표적으로 Max-Pooling과 Average-Pooling 두 가�
 이번에는 몇개의 데이터로 실험하는 것이 아니라 IMDB 데이터셋의 [영화 리뷰 데이터셋](http://ai.stanford.edu/~amaas/data/sentiment/)을 이용할 것이다
 
 ---
-# 4. #tensorflow_라이브러리를_이용한_시스템_구축 
-우선 라이브러리를 설치하자
+# 4. #keras_라이브러리를_이용한_시스템_구축 
+우선 라이브러리를 설치하자, keras는 tensorflow 라이브러리에 포함되어있기 때문에 tensorflow를 설치하면 된다
 ```
 pip install tensorflow
 ```
+
+gpu를 쓰고싶다면 아래 라이브러리를 설치하자(다만 일부 파이썬 버전에서만 사용할 수 있기 때문에 3.9.x 버전을 사용하는걸 추천한다.)
+```
+pip install tensorflow-gpu
+pip install numpy==1.23.5
+```
+또한 일부 numpy버전에서는 오류가 있어 다른 버전의 numpy 라이브러리를 받아야 오류가 안난다
+
+마지막으로 똑같이 받아도
