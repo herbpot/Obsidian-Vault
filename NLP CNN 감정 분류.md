@@ -202,3 +202,33 @@ tlabel = np.array([[i] for i in test_labels]) # 검증 데이터의 y에 해당�
 
 그리고 train set과 test set에 전부 one hot encode 처리를 해주자
 
+```python
+from tensorflow.keras.layers import Conv2D,MaxPooling2D,Dense,Dropout,Flatten
+from tensorflow.keras.models import Sequential
+
+
+model = Sequential()
+model.add(Conv2D(6, (5, 3), input_shape=(888, 999, 1), activation='relu'))
+model.add(MaxPooling2D(pool_size=(2, 2)))
+model.add(Flatten())
+model.add(Dense(120, activation='relu'))
+model.add(Dense(1, activation='softmax'))
+  
+model.compile(optimizer='adam', loss=losses.BinaryCrossentropy(), metrics=['accuracy'])
+```
+
+이제 모델을 구성해보자
+이때 주의해야 할 점은 conv2D의 input_shape는 한 문장의 차원과 동일해야 한다는 것이다.
+이번에는 (5, 3)크기의 filter와 (2, 2)크기의 maxpooling을 사용하였다. (stride는 기본적으로 1이다.)
+
+```python
+model.fit(train, label, batch_size=32, epochs=5)
+```
+
+이후 훈련을 진행하고
+
+```python
+model.evaluate(test, tlabel)
+```
+
+모델을 평가해본다
