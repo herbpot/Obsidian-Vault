@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#tensorflow_라이브러리를_이용한_시스템_구축",
+                "query": "tag:#keras_라이브러리를_이용한_시스템_구축",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -70,8 +70,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "53da320e885c0037",
@@ -149,7 +148,7 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "a04a92fff0941bb3",
+  "active": "095485bd8ba2f66d",
   "lastOpenFiles": [
     "README.md",
     "이.md",

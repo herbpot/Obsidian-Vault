@@ -222,7 +222,7 @@ model.compile(optimizer='rmsprop', loss=losses.BinaryCrossentropy(), metrics=['a
 이번에는 (5, 3)크기의 filter와 (2, 2)크기의 maxpooling을 사용하였다. (stride는 기본적으로 1이다.)
 
 ```python
-model.fit(train, label, batch_size=32, epochs=5)
+model.fit(train, label, batch_size=32, epochs=2)
 ```
 
 이후 훈련을 진행하고
@@ -231,6 +231,15 @@ model.fit(train, label, batch_size=32, epochs=5)
 model.evaluate(test, tlabel)
 ```
 
-모델을 평가해본다
+모델을 평가해본다.
+```
+훈련 결과:
+4/4 [==============================] - 29s 8s/step - loss: 0.1183 - accuracy: 0.9900
+평가 결과:
+4/4 [==============================] - 13s 603ms/step - loss: 0.8267 - accuracy: 0.5300
+```
 
-이때 epoch
+데이터가 적어서 그런지 4번만 학습해도 과적합이 일어나므로 조심하자 
+
+# 5. #추가 
+실제 사용을 위해서는 입력 문장의 전처리 과정이 필요할 것이다. 특히 
