@@ -143,6 +143,22 @@ word_index["<UNK>"] = 2
 word_index["<UNUSED>"] = 3
 ```
 
-이후 전처리에서 사용할 <PAD>와<START> 토큰을 추가해주고 알 수 없는 단어(word_index에 존재하지 않는 단어)에 사용될 <UNK>토큰도 추가해준다.
+이후 전처리에서 사용할 \<PAD\>와\<START\> 토큰을 추가해주고 알 수 없는 단어(word_index에 존재하지 않는 단어)에 사용될 \<UNK\>토큰도 추가해준다.
 
 원래는 word_index에 없는 단어는 일일이 필터링 해줘야 하지만 이 데이터셋에선 미리 필터링 된 상태로 제공되었다
+
+```python
+max([len(i) for i in train_datas]), max([len(i) for i in test_datas]), len(train_datas[0])
+```
+
+이후 padding을 위해 각 세트의 문장 최대 길이를 구하고 (최대 길이가 888이 나왔다)
+
+```python
+train_datas = preprocessing.sequence.pad_sequences(train_datas, value=word_index['<PAD>'], padding='post', maxlen=888)
+
+test_datas = preprocessing.sequence.pad_sequences(test_datas, value=word_index['<PAD>'], padding='post', maxlen=888)
+```
+
+그 정보를 바탕으로 padding을 해준다.
+
+이후 1차원 데이터인 문장을 2차원 형태로 만들기  위해
