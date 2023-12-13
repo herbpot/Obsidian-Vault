@@ -161,4 +161,16 @@ test_datas = preprocessing.sequence.pad_sequences(test_datas, value=word_index['
 
 그 정보를 바탕으로 padding을 해준다.
 
-그 다음 1차원 데이터인 문장을 2차원 형태로 만들기 위해 one hot encoding을 진행할 것이다
+```python
+def one(index):
+    a = np.zeros((999,1), dtype=int)
+    print(a)
+    a[index-1] = np.array([1])
+    return a
+    
+index_onehot = {i:one(i) for i in index_word.keys()}
+```
+
+그 다음 1차원 데이터인 문장을 2차원 형태로 만들기 위해 one hot encoding을 진행한다
+
+다만 이때 인코딩 후를 보면 문장의 데이터가 3차원인 것을 볼 수 있는데, 이는 conv2D레이어가 이미지 데이터를 처리할 때 
