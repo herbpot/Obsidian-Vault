@@ -1,6 +1,6 @@
 >1. #LLM이란
 >2. #Fine_Tuning이란
->3. #Transformers를_이용해_Fine_Tuning을_해보자
+>3. #Langchain
 
 ---
 # 1. #LLM이란 
