@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "NLP CNN 감정 분류.md",
+                "file": "NLP RNN 감정 분류.md",
                 "mode": "source",
                 "source": false
               }
@@ -25,14 +25,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "NLP RNN 감정 분류.md",
+                "file": "NLP CNN 감정 분류.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -160,13 +159,13 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "7c053ef145ccb44f",
+  "active": "a04a92fff0941bb3",
   "lastOpenFiles": [
-    "Fine Tuning LLM을 개조해보자.md",
+    "NLP CNN 감정 분류.md",
     "NLP RNN 감정 분류.md",
+    "Fine Tuning LLM을 개조해보자.md",
     "Pasted image 20231218210913.png",
     "Pasted image 20231218204245.png",
-    "NLP CNN 감정 분류.md",
     "NLP 나이브 베이즈 감정 분류.md",
     "이.md",
     "README.md",
