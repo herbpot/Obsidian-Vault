@@ -119,65 +119,31 @@ test_datas = preprocessing.sequence.pad_sequences(test_datas, value=word_index['
 
 그 정보를 바탕으로 padding을 해준다.
 
-```python
-def one(index):
-    a = np.zeros((999,1), dtype=int)
-    print(a)
-    a[index-1] = np.array([1])
-    return a
-    
-index_onehot = {i:one(i) for i in index_word.keys()}
-```
-
-그 다음 1차원 데이터인 문장을 2차원 형태로 만들기 위해  one hot encoding을 진행하기 위해 dictionaty를 만든다.
-각 인덱스를 0과 1로 구분함으로써 인덱스의 크기의 차이가 학습에 영향을 끼치지 않도록 할 것이다. 이에 대해선 나중에 다시 정리해보도록 하겠다
-
-다만 이때 인코딩 후를 보면 문장의 데이터가 3차원인 것을 볼 수 있는데, 이는 conv2D레이어가 이미지 데이터를 처리할 때 각 픽셀에서 RGB데이터까지 포함하여 3차원으로 처리하기 때문에 인위적으로 한 차원을 늘려준 것이다
+기존 CNN과는 달리 RNN은 one hot encoding을 통해 차원을 늘려줄 필요가 없다
 
 ```python
-def encode_one(index):
-    return np.array([index_onehot[i] for i in index])
-```
+from tensorflow.keras.layers import SimpleRNN,Dense
 
-이후 아까 만든 dictionary를 이용한 encoder를 만든다
-
-```python
-train = [] # 학습 데이터의 x에 해당한다
-for i in train_datas:
-    train.append(encode_one(i))
-    
-train = np.array(train)
-
-test = [] # 검증 데이터의 x에 해당한다
-for i in test_datas:
-    test.append(encode_one(i))
-
-test = np.array(test)
-
-label = np.array([[i] for i in train_labels]) # 학습 데이터의 y에 해당한다
-tlabel = np.array([[i] for i in test_labels]) # 검증 데이터의 y에 해당한다
-```
-
-그리고 train set과 test set에 전부 one hot encode 처리를 해주자
-
-```python
-from tensorflow.keras.layers import Conv2D,MaxPooling2D,Dense,Dropout,Flatten
 from tensorflow.keras.models import Sequential
 
+  
+  
 
 model = Sequential()
-model.add(Conv2D(6, (5, 3), input_shape=(888, 999, 1), activation='relu'))
-model.add(MaxPooling2D(pool_size=(2, 2)))
-model.add(Flatten())
+
+model.add(SimpleRNN(100, input_shape=(1,888), activation='relu'))
+
 model.add(Dense(120, activation='relu'))
+
 model.add(Dense(1, activation='sigmoid'))
+
   
+
 model.compile(optimizer='rmsprop', loss=losses.BinaryCrossentropy(), metrics=['accuracy'])
 ```
 
 이제 모델을 구성해보자
-이때 주의해야 할 점은 conv2D의 input_shape는 한 문장의 차원과 동일해야 한다는 것이다.
-이번에는 (5, 3)크기의 filter와 (2, 2)크기의 maxpooling을 사용하였다. (stride는 기본적으로 1이다.)
+input shape는 언제나 훈련 데이터셋의 차원과 동일해야 한다. 이 둘이 다르다는 것은 정사각형을 크기가 동일한 별 모양의 입구에 집어넣겠다는 소리같은 것이다 
 
 ```python
 model.fit(train, label, batch_size=32, epochs=2)
@@ -192,10 +158,12 @@ model.evaluate(test, tlabel)
 모델을 평가해본다.
 ```
 훈련 결과:
-4/4 [==============================] - 29s 8s/step - loss: 0.1183 - accuracy: 0.9900
+4/4 [==============================] - 0s 13ms/step - loss: 10.3028 - accuracy: 0.7742
 평가 결과:
-4/4 [==============================] - 13s 603ms/step - loss: 0.8267 - accuracy: 0.5300
+4/4 [==============================] - 1s 22ms/step - loss: 25.5020 - accuracy: 0.5300
 ```
+
+loss는 신경쓰지 않아도 된다. 감정 분류는 정확성을 따져야 하기 때문에 우리는 accuracy에 집중해야 한다
 
 ---
 # 4. #LSTM 
