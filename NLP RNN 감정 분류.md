@@ -178,3 +178,37 @@ LSTM은 RNN과 작동 방식은 비슷하나 기존 정보를 다음 회차의 �
 
 기존에 RNN은 이전까지 전달된 모든 정보와 이번 회차의 정보를 합친 뒤에 다음으로 전달할지 결정하지만, LSTM은 그림을 보면 알 수 있듯이 기존 구조에 메모리 파이프를 추가하여 정보의 전달 결정을 조금 더 세분화 시켰다고 할 수 있다.
 
+기존 코드에서 모델 구성 부분만 아래처럼 바꿔보자
+
+```python
+from tensorflow.keras.layers import LSTM,MaxPooling2D,Dense,Dropout,Flatten
+
+from tensorflow.keras.models import Sequential
+
+  
+  
+
+model = Sequential()
+
+# model.add(SimpleRNN(100, input_shape=(1,888), activation='relu'))
+
+model.add(LSTM(100, input_shape=(1,888), activation='relu'))
+
+model.add(Dense(120, activation='relu'))
+
+model.add(Dense(1, activation='sigmoid'))
+
+  
+
+model.compile(optimizer='rmsprop', loss=losses.BinaryCrossentropy(), metrics=['accuracy'])
+```
+
+그럼 다음과 같은 결과가 나온다
+```
+훈련 결과:
+4/4 [==============================] - 1s 154ms/step - loss: 4.0905 - accuracy: 0.8172
+평가 결과:
+4/4 [==============================] - 1s 16ms/step - loss: 8.4033 - accuracy: 0.6100
+```
+
+RNN보다 훨씬 더 뛰어난 성능임을 볼 수 있다

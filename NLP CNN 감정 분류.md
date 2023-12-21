@@ -209,7 +209,7 @@ from tensorflow.keras.models import Sequential
 
 
 model = Sequential()
-model.add(Conv2D(6, (5, 3), input_shape=(888, 999, 1), activation='relu'))
+model.add(Conv2D(100, (5, 3), input_shape=(888, 999, 1), activation='relu'))
 model.add(MaxPooling2D(pool_size=(2, 2)))
 model.add(Flatten())
 model.add(Dense(120, activation='relu'))
