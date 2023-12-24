@@ -13,4 +13,5 @@ LLM이란 Lerge Language Model의 약자로, 번역하면 대규모 언어모델
 
 ---
 # 2. #Fine_Tuning이란 
-Fine Tuning은 미세 조정이라는 의미로
+Fine Tuning은 미세 조정이라는 의미로, 문장 완성 형식으로 결과를 출력하는 LLM들을 번역이나 요약, 대화 등 각 목적에 맞춰 사용하기 위해 사용하는 방법이다.
+
