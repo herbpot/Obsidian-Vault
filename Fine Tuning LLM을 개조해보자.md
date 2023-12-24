@@ -19,4 +19,19 @@ Fine Tuning은 미세 조정이라는 의미로, 문장 완성 형식으로 결�
 이를 통해 한번 사전 학습한 LLM을 의학, 상담 등등 여러 분야에서 활용할 수 있도록 한다.
 
 fine-tuning에선 아래와 같은 것들을 유의해야 한다.
->overfitting
+>Overfitting
+>
+>Learning rating
+>
+>Parameter initialization
+
+하나하나 살펴보자
+
+## Overfiting
+사실 과적합은 모든  모델에서의 유의사항이긴 하다.
+과하게 학습시키면 모델이 유연성을 잃어버릴 수 있으니 Dropout과 epoche를 조절하여 과적합이 일어나지 않도록 조심해야 한다
+
+## Learning rating
+학습률이 너무 높게 잡았다가는 모델의 방향성이 과하게 조정되어 Overfiting과 비슷한 부작용이 일어날 수 있으니 학습이 오래 걸리더라도 학습률을 낮게 잡아 천천히 조정하는 것이 좋다.
+
+Parameter ini
