@@ -35,9 +35,11 @@
             "id": "0ef620e621e7ca19",
             "type": "leaf",
             "state": {
-              "type": "release-notes",
+              "type": "markdown",
               "state": {
-                "currentVersion": "1.5.3"
+                "file": "NLP CNN 감정 분류.md",
+                "mode": "source",
+                "source": false
               }
             }
           },
@@ -120,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "langchain으로 개인비서를 만들어보자.md",
+                "file": "NLP CNN 감정 분류.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -137,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "langchain으로 개인비서를 만들어보자.md",
+                "file": "NLP CNN 감정 분류.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -160,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "langchain으로 개인비서를 만들어보자.md"
+                "file": "NLP CNN 감정 분류.md"
               }
             }
           }
@@ -184,13 +186,13 @@
   },
   "active": "0ef620e621e7ca19",
   "lastOpenFiles": [
+    "NLP 나이브 베이즈 감정 분류.md",
     "Fine Tuning LLM을 개조해보자.md",
     "langchain으로 개인비서를 만들어보자.md",
     "NLP RNN 감정 분류.md",
     "NLP CNN 감정 분류.md",
     "Pasted image 20231218210913.png",
     "Pasted image 20231218204245.png",
-    "NLP 나이브 베이즈 감정 분류.md",
     "이.md",
     "README.md",
     "Pasted image 20231207211133.png",
