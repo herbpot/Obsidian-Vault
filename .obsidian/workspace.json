@@ -32,6 +32,16 @@
             }
           },
           {
+            "id": "0ef620e621e7ca19",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.5.3"
+              }
+            }
+          },
+          {
             "id": "7c053ef145ccb44f",
             "type": "leaf",
             "state": {
@@ -44,7 +54,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -172,7 +182,7 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "429067c30fec39d6",
+  "active": "0ef620e621e7ca19",
   "lastOpenFiles": [
     "Fine Tuning LLM을 개조해보자.md",
     "langchain으로 개인비서를 만들어보자.md",
