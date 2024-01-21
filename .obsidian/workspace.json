@@ -37,7 +37,19 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "NLP CNN 감정 분류.md",
+                "file": "Fine Tuning LLM을 개조해보자.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "7bc6c24129a4077a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "모든 플랫폼을 아우르는 프레임워크 Flutter.md",
                 "mode": "source",
                 "source": false
               }
@@ -56,7 +68,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -122,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "NLP CNN 감정 분류.md",
+                "file": "모든 플랫폼을 아우르는 프레임워크 Flutter.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "NLP CNN 감정 분류.md",
+                "file": "모든 플랫폼을 아우르는 프레임워크 Flutter.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "NLP CNN 감정 분류.md"
+                "file": "모든 플랫폼을 아우르는 프레임워크 Flutter.md"
               }
             }
           }
@@ -184,13 +196,14 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "0ef620e621e7ca19",
+  "active": "7bc6c24129a4077a",
   "lastOpenFiles": [
-    "NLP 나이브 베이즈 감정 분류.md",
     "Fine Tuning LLM을 개조해보자.md",
+    "모든 플랫폼을 아우르는 프레임워크 Flutter.md",
+    "NLP CNN 감정 분류.md",
+    "NLP 나이브 베이즈 감정 분류.md",
     "langchain으로 개인비서를 만들어보자.md",
     "NLP RNN 감정 분류.md",
-    "NLP CNN 감정 분류.md",
     "Pasted image 20231218210913.png",
     "Pasted image 20231218204245.png",
     "이.md",
