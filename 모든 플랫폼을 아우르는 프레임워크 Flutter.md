@@ -20,4 +20,9 @@ Flutter의 UI는 위젯이라는 단위로 이루어지는데 이 위젯은 flut
 # Dart란
 Dart란 Google이 멀티 플랫폼 동작을 목표로 만든 언어로 C언어와 비슷한 문법으로 구성되어있으며 JAVA처럼 자체 VM이 있다.(Dart의 경우 DVM이라고 한다)
 
-또한 AOT(Afead of )
+그래서 C언어나 JAVA 등의 언어를 사용해본 사람이라면 빠르게 익힐 수 있으며 Dart 자체
+
+또한 개발 중에는 JIT(Just In Time)과 Hot Reload를 제공함으로써 빠른 개발 속도와 쾌적한 개발 환경을 제공하고 배포할 때는 AOT(Afead of Time) 사용함으로써 짧은 구동 시간을 만들어낸다.
+
+
+
