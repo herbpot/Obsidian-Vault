@@ -35,9 +35,11 @@
             "id": "0ef620e621e7ca19",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "Pasted image 20240121213047.png"
+                "file": "모든 플랫폼을 아우르는 프레임워크 Flutter.md",
+                "mode": "source",
+                "source": false
               }
             }
           },
@@ -130,7 +132,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Pasted image 20240121213047.png",
+                "file": "모든 플랫폼을 아우르는 프레임워크 Flutter.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -147,7 +149,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Pasted image 20240121213047.png",
+                "file": "모든 플랫폼을 아우르는 프레임워크 Flutter.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -170,7 +172,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Pasted image 20240121213047.png"
+                "file": "모든 플랫폼을 아우르는 프레임워크 Flutter.md"
               }
             }
           }
@@ -194,6 +196,8 @@
   },
   "active": "0ef620e621e7ca19",
   "lastOpenFiles": [
+    "Pasted image 20240121213047.png",
+    "Pasted image 20240121190136.png",
     "Pasted image 20240121222748.png",
     "Pasted image 20240121222833.png",
     "Pasted image 20240121222823.png",
@@ -202,9 +206,7 @@
     "Pasted image 20240121173522.png",
     "Pasted image 20240121173549.png",
     "Pasted image 20240121185837.png",
-    "Pasted image 20240121190136.png",
     "Pasted image 20240121212853.png",
-    "Pasted image 20240121213047.png",
     "모든 플랫폼을 아우르는 프레임워크 Flutter.md",
     "Fine Tuning LLM을 개조해보자.md",
     "langchain으로 개인비서를 만들어보자.md",
