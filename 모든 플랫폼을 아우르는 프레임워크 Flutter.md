@@ -33,4 +33,6 @@ Flutter는 vs code, android studio, intelliJ에서 사용할 수 있는데 귀�
 
 우선 vs code에 extension을 설치하자. code 화면의 왼쪽 목록에서 Extensions탭에서 검색하면 바로 위에 뜬다.
 
-이후 **ctrl + shift + p**를 눌러 명령 팔레트를 호출한 뒤 
+이후 **ctrl + shift + p**를 눌러 명령 팔레트를 호출한 뒤 **Flutter: New Project**를 실행하자
+그럼 오른쪽 상단에 오류 메세지가 뜨는데 (아직 Flutter SDK가 없으니 당연하다) 여기서 **download SDK**를 눌러주자.
+이제 폴더 선택창이 뜨는데
