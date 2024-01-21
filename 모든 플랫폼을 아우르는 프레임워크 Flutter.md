@@ -18,4 +18,4 @@ Flutter의 UI는 위젯이라는 단위로 이루어지는데 이 위젯은 flut
 
 ---
 # Dart란
-Dart란 javascript를 대체하기 위해 Google이 야심차게 만든 언어이다. (물론 점유율은 처참하게 낮다)
+Dart란 Google이 멀티 플랫폼 동작을 목표로 만든 언어로 C언어와 비슷한 문법으로 구성되어있으며
