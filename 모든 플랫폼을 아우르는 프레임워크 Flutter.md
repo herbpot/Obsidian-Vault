@@ -52,3 +52,17 @@ Flutter는 vs code, android studio, intelliJ에서 사용할 수 있는데 귀�
 
 # 시작하기
 이제 새 프로젝트를 만들어보자
+
+다시 **ctrl + shift + p**를 눌러 명령 팔레트를 호출한 뒤 **Flutter: New Project**를 실행하자
+![[Pasted image 20240121173549.png]]
+
+그럼 이렇게 유형이 뜨는데
+![[Pasted image 20240121212853.png]]
+일단 완전 처음부터 시작하면 막막할것 같아 Aplication을 선택해주었다
+
+그 다음 뜨는 창에서 Aplication을 작성할 파일 위치를 설정하고 들어가면
+
+![[Pasted image 20240121213047.png]]
+이와 같은 구조로 파일들이 형성된다
+
+또 main.dart에는 기초적인 Aplication이 작성되어있으므로 공식 문서를 참고해가며 물고 뜯고 맛보고 즐겨보자
