@@ -50,7 +50,7 @@ Flutter는 vs code, android studio, intelliJ에서 사용할 수 있는데 귀�
 
 이후 다시 **ctrl + shift + p**를 눌러 명령 팔레트를 호출한 뒤 **Flutter: Run Flutter Doctor**를 실행하자
 
-![[Pasted image 20240121220609.png]]
+![](Pasted%20image%2020240121222833.png)
 그럼 밑에 콘솔 창에서 이렇게 나올텐데
 
 [x]표시된 조건들을 모두 만족시킬 필요는 없지만 개발 목적에 따라 일부 조건들을 맞춰줘야 한다.
@@ -59,7 +59,7 @@ Flutter는 vs code, android studio, intelliJ에서 사용할 수 있는데 귀�
 
 [Visual Studio Tools 다운로드 - Windows, Mac, Linux용 무료 설치 (microsoft.com)](https://visualstudio.microsoft.com/ko/downloads/)에 들어가면 커뮤니티 버전의 Visual Studio 2022 installer를 받을 수 있는데, 이 installer를 받은 뒤에
 
-![[Pasted image 20240121221642.png]]
+![](Pasted%20image%2020240121222823.png)
 위에 체크되어 있는 부분만 체크 한 뒤 설치해주면 된다.
 
 ---
@@ -80,7 +80,7 @@ Flutter는 vs code, android studio, intelliJ에서 사용할 수 있는데 귀�
 이와 같은 구조로 파일들이 형성된다
 
 또 main.dart에는 기초적인 Aplication이 작성되어있는데 테스트 삼아 web으로 구동시켜보면
-![[Pasted image 20240121222122.png]]
+![](Pasted%20image%2020240121222748.png)
 
 잘된다.
 
