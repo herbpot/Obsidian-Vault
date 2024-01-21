@@ -46,7 +46,11 @@ Flutter는 vs code, android studio, intelliJ에서 사용할 수 있는데 귀�
 이제 유튜브 몇 편 보면 설치가 끝나는데 여기서 **~PATH**라고 써 있는 버튼을 누르자. 환경변수를 등록하겠다는건데 이거 안하면 나중에 다른 cmd창에서 명령어 쳤을 때 안될 수도 있다.
 ![[Pasted image 20240121190136.png]]
 
-이러면 설치는 끝이다.
+이러면 기본적인 설치는 끝이다.
+
+이후 다시 **ctrl + shift + p**를 눌러 명령 팔레트를 호출한 뒤 **Flutter: Run Flutter Doctor**를 실행하자
+
+그럼 밑에 
 
 ---
 
