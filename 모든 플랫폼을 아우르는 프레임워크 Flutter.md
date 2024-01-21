@@ -57,7 +57,10 @@ Flutter는 vs code, android studio, intelliJ에서 사용할 수 있는데 귀�
 
 나는 일단 windows와 web으로 개발하고 싶으므로 Visual Studio - develop Windows apps를 설치해주자 (web의 경우 Edge가 깔려있으므로 상관 없을 듯 하다)
 
-[Visual Studio Tools 다운로드 - Windows, Mac, Linux용 무료 설치 (microsoft.com)](https://visualstudio.microsoft.com/ko/downloads/)에 들어가면 커뮤니티 버전의 Visual Studio 2022 installer를 받을 수 있는데 
+[Visual Studio Tools 다운로드 - Windows, Mac, Linux용 무료 설치 (microsoft.com)](https://visualstudio.microsoft.com/ko/downloads/)에 들어가면 커뮤니티 버전의 Visual Studio 2022 installer를 받을 수 있는데, 이 installer를 받은 뒤에
+
+![[Pasted image 20240121221642.png]]
+위에 체크되어 있는 부분만 체크 한 뒤 설치해주면 된다.
 
 ---
 
@@ -76,7 +79,12 @@ Flutter는 vs code, android studio, intelliJ에서 사용할 수 있는데 귀�
 ![[Pasted image 20240121213047.png]]
 이와 같은 구조로 파일들이 형성된다
 
-또 main.dart에는 기초적인 Aplication이 작성되어있으므로 공식 문서를 참고해가며 물고 뜯고 맛보고 즐겨보자
+또 main.dart에는 기초적인 Aplication이 작성되어있는데 테스트 삼아 web으로 구동시켜보면
+![[Pasted image 20240121222122.png]]
+
+잘된다.
+
+이제 공식 문서를 참고해가며 물고 뜯고 맛보고 즐겨보자
 
 Flutter 공식 Document (영어)
 >https://docs.flutter.dev/
