@@ -30,3 +30,7 @@ Dart란 Google이 멀티 플랫폼 동작을 목표로 만든 언어로 C언어�
 # Flutter 설치
 이제 Flutter를 설치해보자. 
 Flutter는 vs code, android studio, intelliJ에서 사용할 수 있는데 귀찮으니까 나는 이미 설치되어있는 vs code를 사용할 것이다.
+
+우선 vs code에 extension을 설치하자. code 화면의 왼쪽 목록에서 Extensions탭에서 검색하면 바로 위에 뜬다.
+
+이후 **ctrl + shift + p**를 눌러 명령 팔레트를 호출한 뒤 
