@@ -50,7 +50,14 @@ Flutter는 vs code, android studio, intelliJ에서 사용할 수 있는데 귀�
 
 이후 다시 **ctrl + shift + p**를 눌러 명령 팔레트를 호출한 뒤 **Flutter: Run Flutter Doctor**를 실행하자
 
-그럼 밑에 
+![[Pasted image 20240121220609.png]]
+그럼 밑에 콘솔 창에서 이렇게 나올텐데
+
+[x]표시된 조건들을 모두 만족시킬 필요는 없지만 개발 목적에 따라 일부 조건들을 맞춰줘야 한다.
+
+나는 일단 windows와 web으로 개발하고 싶으므로 Visual Studio - develop Windows apps를 설치해주자 (web의 경우 Edge가 깔려있으므로 상관 없을 듯 하다)
+
+[Visual Studio Tools 다운로드 - Windows, Mac, Linux용 무료 설치 (microsoft.com)](https://visualstudio.microsoft.com/ko/downloads/)에 들어가면 커뮤니티 버전의 Visual Studio 2022 installer를 받을 수 있는데 
 
 ---
 
