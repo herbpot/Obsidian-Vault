@@ -44,6 +44,18 @@
             }
           },
           {
+            "id": "548031126a83c1d8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Flutter에서 이미지 넣는 방법.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "7bc6c24129a4077a",
             "type": "leaf",
             "state": {
@@ -66,7 +78,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -132,7 +144,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "모든 플랫폼을 아우르는 프레임워크 Flutter.md",
+                "file": "Flutter에서 이미지 넣는 방법.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -149,7 +161,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "모든 플랫폼을 아우르는 프레임워크 Flutter.md",
+                "file": "Flutter에서 이미지 넣는 방법.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -172,7 +184,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "모든 플랫폼을 아우르는 프레임워크 Flutter.md"
+                "file": "Flutter에서 이미지 넣는 방법.md"
               }
             }
           }
@@ -194,20 +206,20 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "0ef620e621e7ca19",
+  "active": "548031126a83c1d8",
   "lastOpenFiles": [
-    "Pasted image 20240121213047.png",
+    "모든 플랫폼을 아우르는 프레임워크 Flutter.md",
+    "Flutter에서 이미지 넣는 방법.md",
     "Pasted image 20240121190136.png",
+    "Pasted image 20240122112607.png",
+    "Pasted image 20240122112555.png",
+    "Pasted image 20240122112331.png",
+    "Pasted image 20240121213047.png",
     "Pasted image 20240121222748.png",
     "Pasted image 20240121222833.png",
     "Pasted image 20240121222823.png",
     "Pasted image 20231218204245.png",
     "Pasted image 20231218210913.png",
-    "Pasted image 20240121173522.png",
-    "Pasted image 20240121173549.png",
-    "Pasted image 20240121185837.png",
-    "Pasted image 20240121212853.png",
-    "모든 플랫폼을 아우르는 프레임워크 Flutter.md",
     "Fine Tuning LLM을 개조해보자.md",
     "langchain으로 개인비서를 만들어보자.md",
     "NLP CNN 감정 분류.md",
