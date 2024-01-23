@@ -56,6 +56,18 @@
             }
           },
           {
+            "id": "19dd08acb3bd0712",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "WSL 설치하고 사용하기.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "7bc6c24129a4077a",
             "type": "leaf",
             "state": {
@@ -78,7 +90,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -144,7 +156,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Flutter에서 이미지 넣는 방법.md",
+                "file": "WSL 설치하고 사용하기.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -161,7 +173,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Flutter에서 이미지 넣는 방법.md",
+                "file": "WSL 설치하고 사용하기.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -184,7 +196,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Flutter에서 이미지 넣는 방법.md"
+                "file": "WSL 설치하고 사용하기.md"
               }
             }
           }
@@ -206,10 +218,11 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "548031126a83c1d8",
+  "active": "19dd08acb3bd0712",
   "lastOpenFiles": [
-    "모든 플랫폼을 아우르는 프레임워크 Flutter.md",
     "Flutter에서 이미지 넣는 방법.md",
+    "WSL 설치하고 사용하기.md",
+    "모든 플랫폼을 아우르는 프레임워크 Flutter.md",
     "Pasted image 20240121190136.png",
     "Pasted image 20240122112607.png",
     "Pasted image 20240122112555.png",
