@@ -76,3 +76,5 @@ sudo cp /var/cuda-repo-wsl-ubuntu-12-3-local/cuda-*-keyring.gpg /usr/share/keyri
 sudo apt-get update
 sudo apt-get -y install cuda-toolkit-12-3
 ```
+
+작업이 완료되면 끝이다
