@@ -9,7 +9,7 @@
 최근 AI관련 여러 자료들을 보는데 은근 windows 자료가 부족하다는 느낌을 받는다.
 (해외에서도 다 리눅스로 해결법을 알려준다)
 
-이전에도 wsl을 사용하긴 했지만 메모리 문제도 있어 포기했었는데, 오래 쓰던 윈도우를 버리기도 그렇고 써본 리눅스 UI는 불편하고 구렸다.
+이전에도 wsl을 사용하긴 했지만 메모리 문제도 있고 느려서 포기했었는데, 오래 쓰던 윈도우를 버리기도 그렇고 써본 리눅스 UI는 불편하고 구렸다.
 
 그래서 이번엔 다시 wsl을 써보고자 한다.
 
@@ -56,4 +56,23 @@ wsl -l -v
 ---
 
 # WSl에서 Nvidia GPU 사용하기
-zhel
+딥러닝 작업을 하다보면 GPU를 사용해야 하는데 WSL에선 따로 CUDA ToolKit을 받아야 한다.
+(지금까지 느린 이유가 있었다)
+
+Nvidia 공식 문서에서는 오래된 GPG키를 지우라고 한다
+리눅스 커널에서 명령어를 입력하자
+```
+sudo apt-key del 7fa2af80
+```
+
+그리고 아래 사이트나 명령어를 이용해 CUDA ToolKit을 받아주자
+https://developer.nvidia.com/cuda-downloads?target_os=Linux&target_arch=x86_64&Distribution=WSL-Ubuntu&target_version=2.0&target_type=deb_local
+```
+wget https://developer.download.nvidia.com/compute/cuda/repos/wsl-ubuntu/x86_64/cuda-wsl-ubuntu.pin
+sudo mv cuda-wsl-ubuntu.pin /etc/apt/preferences.d/cuda-repository-pin-600
+wget https://developer.download.nvidia.com/compute/cuda/12.3.2/local_installers/cuda-repo-wsl-ubuntu-12-3-local_12.3.2-1_amd64.deb
+sudo dpkg -i cuda-repo-wsl-ubuntu-12-3-local_12.3.2-1_amd64.deb
+sudo cp /var/cuda-repo-wsl-ubuntu-12-3-local/cuda-*-keyring.gpg /usr/share/keyrings/
+sudo apt-get update
+sudo apt-get -y install cuda-toolkit-12-3
+```
