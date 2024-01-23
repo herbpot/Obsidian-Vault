@@ -105,3 +105,4 @@ wsl --import Ubuntu-20.04 d:\wsl\ubuntu_20_04 d:\wsl.tar
 ```
 wsl --unregister Ubuntu
 ```
+
