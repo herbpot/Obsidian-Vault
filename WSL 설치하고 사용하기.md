@@ -16,7 +16,7 @@
 ---
 
 # WSL 설치하기
-의외로 쉬우니 하나씩 해보자
+엄청 쉬우니 하나씩 해보자
 
 우선 cmd를 열고 아래 명령어를 쳐보자
 ```
@@ -39,7 +39,21 @@ dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /nores
 wsl --install
 ```
 
-조금만 기다리면 설치가 끝나고 
+조금만 기다리면 설치가 끝나고 껏다 키라고 해서 껏다 키면,
+![](Pasted%20image%2020240123135937.png)
+이렇게 뜨는데, 리눅스에서 쓸 username과 password를 입력해주면 된다
+
+그럼 끝이다.
+마지막으로 아래 명령어를 콘솔에 입력해보면
 ```
 wsl -l -v
 ```
+
+![](Pasted%20image%2020240123140344.png)
+
+잘 나온다
+
+---
+
+# WSl에서 Nvidia GPU 사용하기
+zhel
