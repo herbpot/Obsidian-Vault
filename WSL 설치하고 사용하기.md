@@ -23,6 +23,23 @@
 wsl
 ```
 
-가끔 없다고 뜨기도 하는데, 컴퓨터에 wsl 기능을 활성화하지 않은 것이다
+가끔 없다고 뜨기도 하는데, 컴퓨터에 wsl 기능이 없는 것이다
+아래 명령어를 입력해 wsl을 설치하자
+```
+dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
+```
 
+```
+dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
+```
+작업이 정상적으로 완료되면 컴퓨터를 한번 다시 시작해줘야 한다
 
+이후 아래 명령어로 리눅스를 설치하자
+```
+wsl --install
+```
+
+조금만 기다리면 설치가 끝나고 
+```
+wsl -l -v
+```
