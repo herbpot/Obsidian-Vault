@@ -61,7 +61,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "WSL 설치하고 사용하기.md",
+                "file": "모든 플랫폼을 아우르는 프레임워크 Flutter.md",
                 "mode": "source",
                 "source": false
               }
@@ -156,7 +156,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "WSL 설치하고 사용하기.md",
+                "file": "모든 플랫폼을 아우르는 프레임워크 Flutter.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -173,7 +173,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "WSL 설치하고 사용하기.md",
+                "file": "모든 플랫폼을 아우르는 프레임워크 Flutter.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -196,7 +196,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "WSL 설치하고 사용하기.md"
+                "file": "모든 플랫폼을 아우르는 프레임워크 Flutter.md"
               }
             }
           }
@@ -220,10 +220,11 @@
   },
   "active": "19dd08acb3bd0712",
   "lastOpenFiles": [
+    "읽을 책 리스트",
+    "WSL 설치하고 사용하기.md",
     "Pasted image 20240123140344.png",
     "Pasted image 20240123135937.png",
     "Flutter에서 이미지 넣는 방법.md",
-    "WSL 설치하고 사용하기.md",
     "모든 플랫폼을 아우르는 프레임워크 Flutter.md",
     "Pasted image 20240121190136.png",
     "Pasted image 20240122112607.png",
@@ -233,7 +234,6 @@
     "Pasted image 20240121222748.png",
     "Pasted image 20240121222833.png",
     "Pasted image 20240121222823.png",
-    "Pasted image 20231218204245.png",
     "Fine Tuning LLM을 개조해보자.md",
     "langchain으로 개인비서를 만들어보자.md",
     "NLP CNN 감정 분류.md",
