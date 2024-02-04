@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "langchain으로 챗봇을 만들어보자.md",
+                "file": "langchain은 좋은 도구인가.md",
                 "mode": "source",
                 "source": false
               }
@@ -61,7 +61,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "langchain으로 챗봇을 만들어보자.md",
+                "file": "langchain은 좋은 도구인가.md",
                 "mode": "source",
                 "source": false
               }
@@ -156,7 +156,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "langchain으로 챗봇을 만들어보자.md",
+                "file": "langchain은 좋은 도구인가.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -173,7 +173,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "langchain으로 챗봇을 만들어보자.md",
+                "file": "langchain은 좋은 도구인가.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -196,7 +196,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "langchain으로 챗봇을 만들어보자.md"
+                "file": "langchain은 좋은 도구인가.md"
               }
             }
           }
@@ -235,7 +235,7 @@
     "Pasted image 20240121222833.png",
     "Pasted image 20240121222823.png",
     "Fine Tuning LLM을 개조해보자.md",
-    "langchain으로 챗봇을 만들어보자.md",
+    "langchain은 좋은 도구인가.md",
     "NLP CNN 감정 분류.md",
     "NLP 나이브 베이즈 감정 분류.md",
     "NLP RNN 감정 분류.md",
