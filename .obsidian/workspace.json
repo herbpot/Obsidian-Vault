@@ -61,7 +61,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "langchain은 좋은 도구인가.md",
+                "file": "읽을 책 리스트.md",
                 "mode": "source",
                 "source": false
               }
@@ -156,7 +156,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "langchain은 좋은 도구인가.md",
+                "file": "읽을 책 리스트.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -173,7 +173,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "langchain은 좋은 도구인가.md",
+                "file": "읽을 책 리스트.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -196,7 +196,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "langchain은 좋은 도구인가.md"
+                "file": "읽을 책 리스트.md"
               }
             }
           }
@@ -220,6 +220,10 @@
   },
   "active": "19dd08acb3bd0712",
   "lastOpenFiles": [
+    "Excalidraw/Drawing 2024-02-07 23.32.52.excalidraw.md",
+    "읽을 책 리스트.md",
+    "langchain은 좋은 도구인가.md",
+    "Excalidraw",
     "모든 플랫폼을 아우르는 프레임워크 Flutter.md",
     "읽을 책 리스트",
     "WSL 설치하고 사용하기.md",
@@ -235,7 +239,6 @@
     "Pasted image 20240121222833.png",
     "Pasted image 20240121222823.png",
     "Fine Tuning LLM을 개조해보자.md",
-    "langchain은 좋은 도구인가.md",
     "NLP CNN 감정 분류.md",
     "NLP 나이브 베이즈 감정 분류.md",
     "NLP RNN 감정 분류.md",
