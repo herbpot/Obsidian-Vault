@@ -27,22 +27,14 @@
 ## manifest.json
 ```json
 {
-  "name": "first extension",
-  "version": "1.0",
-  "description": "first Extension",
-  "background": {
-    "scripts": ["scripts/background.js"],
-    "persistent": false
-  },
-  "content_scripts": {
-    "js": ["scripts/content.js"]
-  },
-  "permissions": ["storage"],  
-  "browser_action": {    
-    "default_icon": "favicon.png",    
-    "default_popup": "./src/extension/popup.html"  
-  },
-  "manifest_version": 2
+	"manifest_version": 3,  
+	"name": "Hello Extensions",  
+	"description": "Base Level Extension",  
+	"version": "1.0",  
+	"action": 
+		{    
+			"default_popup": "hello.html",    
+			"default_icon": "hello_extensions.png"  
+		}
 }
 ```
-
