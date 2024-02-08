@@ -24,8 +24,16 @@
 # 코드
 아래는 구글에서 제공하는 튜토리얼이다.
 
-우선 크롬이 이 플러그인에 대한 정보를 읽을 수 있도록 manifest.json을 작성해주자
+코드의 완성된 폴더 구조다.
+```
+extension
+|- manifest.json
+|- focus-mode.css
+|- scripts
+	|- background.js
+```
 
+우선 크롬이 이 플러그인에 대한 정보를 읽을 수 있도록 manifest.json을 작성해주자
 ## manifest.json
 ```json
 {
@@ -64,13 +72,60 @@
 
   }
 ```
+이때 ```permissions```는 플러그인이 작동하는데 필요한 권한 목록이고 ```_excute_action```은 ```suggested_key``` 입력 시 action.onClicked이벤트를 발생시킨다.
 
-참고로 파일 구조는 아래와 같다
+## background.js
+```javascript
+const extensions = 'https://developer.chrome.com/docs/extensions'
+const webstore = 'https://developer.chrome.com/docs/webstore'
+  
+chrome.runtime.onInstalled.addListener(() => {
+    chrome.action.setBadgeText({
+        text:"OFF",
+    })
+})
+  
+chrome.action.onClicked.addListener(async (tab) => {
+  if (tab.url.startsWith(extensions) || tab.url.startsWith(webstore)) {
+    // Retrieve the action badge to check if the extension is 'ON' or 'OFF'
+    const prevState = await chrome.action.getBadgeText({ tabId: tab.id });
+    // Next state will always be the opposite
+    const nextState = prevState === 'ON' ? 'OFF' : 'ON'
+    // Set the action badge to the next state
+    await chrome.action.setBadgeText({
+      tabId: tab.id,
+      text: nextState,
+    });
+  }
+  if (nextState === "ON") {
+    // Insert the CSS file when the user turns the extension on
+    await chrome.scripting.insertCSS({
+      files: ["focus-mode.css"],
+      target: { tabId: tab.id },
+    });
+  } else if (nextState === "OFF") {
+    // Remove the CSS file when the user turns the extension off
+    await chrome.scripting.removeCSS({
+      files: ["focus-mode.css"],
+      target: { tabId: tab.id },
+    });
+  }
+});
+```
 
+
+## focus-mode.css
+```css
+body > .scaffold > :is(top-nav, navigation-rail, side-nav, footer),
+main > :not(:last-child),
+main > :last-child > navigation-tree,
+main .toc-container {
+  display: none;
+}
+  
+main > :last-child {
+  margin-top: min(10vmax, 10rem);
+  margin-bottom: min(10vmax, 10rem);
+}
 ```
-extension
-|- manifest.json
-|- focus-mode.css
-|- scripts
-	|- background.js
-```
+chrome의 developer사이트에서 왼쪽 사이드바가 보이지 않도록 하는 css를 제공합니다
