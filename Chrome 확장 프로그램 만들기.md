@@ -74,6 +74,11 @@ extension
 ```
 이때 ```permissions```는 플러그인이 작동하는데 필요한 권한 목록이고 ```_excute_action```은 ```suggested_key``` 입력 시 action.onClicked이벤트를 발생시킨다.
 
+>activeTab
+>	: 활성된 창을 조작할 수 있는 권한
+>scripting
+>	: javascript나 css를 페이지에 삽입하거나 제거할 수 있는 권한
+
 ## background.js
 ```javascript
 const extensions = 'https://developer.chrome.com/docs/extensions'
@@ -112,7 +117,7 @@ chrome.action.onClicked.addListener(async (tab) => {
   }
 });
 ```
-
+`onInstelled`는 플러그인이 처음 설치되었을 때 발생하는 이벤트이고, `BadgeText`를 이용해 플러그인이 정보를 저장할 수 있다
 
 ## focus-mode.css
 ```css
@@ -128,4 +133,4 @@ main > :last-child {
   margin-bottom: min(10vmax, 10rem);
 }
 ```
-chrome의 developer사이트에서 왼쪽 사이드바가 보이지 않도록 하는 css를 제공합니다
+chrome의 developer사이트에서 왼쪽 사이드바가 보이지 않도록 하는 css를 제공한다
