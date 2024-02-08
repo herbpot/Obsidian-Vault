@@ -68,6 +68,18 @@
             }
           },
           {
+            "id": "428251a8f41a0b77",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Chrome 확장 프로그램 만들기.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "7bc6c24129a4077a",
             "type": "leaf",
             "state": {
@@ -90,7 +102,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -156,7 +168,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "읽을 책 리스트.md",
+                "file": "Chrome 확장 프로그램 만들기.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -173,7 +185,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "읽을 책 리스트.md",
+                "file": "Chrome 확장 프로그램 만들기.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -196,7 +208,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "읽을 책 리스트.md"
+                "file": "Chrome 확장 프로그램 만들기.md"
               }
             }
           }
@@ -218,10 +230,11 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "19dd08acb3bd0712",
+  "active": "428251a8f41a0b77",
   "lastOpenFiles": [
-    "Excalidraw/Drawing 2024-02-07 23.32.52.excalidraw.md",
     "읽을 책 리스트.md",
+    "Chrome 확장 프로그램 만들기.md",
+    "Excalidraw/Drawing 2024-02-07 23.32.52.excalidraw.md",
     "langchain은 좋은 도구인가.md",
     "Excalidraw",
     "모든 플랫폼을 아우르는 프레임워크 Flutter.md",
