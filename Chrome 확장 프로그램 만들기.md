@@ -41,7 +41,7 @@
   "browser_action": {    
     "default_icon": "favicon.png",    
     "default_popup": "./src/extension/popup.html"  
-  }    
+  },
   "manifest_version": 2
 }
 ```
