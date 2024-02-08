@@ -22,19 +22,55 @@
 	- popup.html과 index.html은 같은 의미로 통한다
 
 # 코드
-크롬이 이 플러그인에 대한 정보를 읽을 수 있도록 manifest.json을 작성해주자
+아래는 구글에서 제공하는 튜토리얼이다.
+
+우선 크롬이 이 플러그인에 대한 정보를 읽을 수 있도록 manifest.json을 작성해주자
 
 ## manifest.json
 ```json
 {
-	"manifest_version": 3,  
-	"name": "Hello Extensions",  
-	"description": "Base Level Extension",  
-	"version": "1.0",  
-	"action": 
-		{    
-			"default_popup": "hello.html",    
-			"default_icon": "hello_extensions.png"  
-		}
-}
+
+    "manifest_version": 3,
+
+    "name": "Focus Mode",
+
+    "description": "Enable focus mode on Chrome's official Extensions and Chrome Web Store documentation.",
+
+    "version": "1.0",
+
+    "background": {
+
+        "service_worker": "script/background.js"
+
+    },
+
+    "permissions": ["activeTab", "scripting"],
+
+    "commands": {
+
+        "_execute_action": {
+
+          "suggested_key": {
+
+            "default": "Ctrl+B",
+
+            "mac": "Command+B"
+
+          }
+
+        }
+
+    }
+
+  }
+```
+
+참고로 파일 구조는 아래와 같다
+
+```
+extension
+|- manifest.json
+|- focus-mode.css
+|- scripts
+	|- background.js
 ```
