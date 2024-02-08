@@ -22,4 +22,27 @@
 	- popup.html과 index.html은 같은 의미로 통한다
 
 # 코드
+크롬이 이 플러그인에 대한 정보를 읽을 수 있도록 manifest.json을 작성해주자
+
+## manifest.json
+```json
+{
+  "name": "first extension",
+  "version": "1.0",
+  "description": "first Extension",
+  "background": {
+    "scripts": ["scripts/background.js"],
+    "persistent": false
+  },
+  "content_scripts": {
+    "js": ["scripts/content.js"]
+  },
+  "permissions": ["storage"],  
+  "browser_action": {    
+    "default_icon": "favicon.png",    
+    "default_popup": "./src/extension/popup.html"  
+  }    
+  "manifest_version": 2
+}
+```
 
